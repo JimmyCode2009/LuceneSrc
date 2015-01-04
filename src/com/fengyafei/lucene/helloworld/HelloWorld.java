@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
 import java.util.LinkedList;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -43,13 +42,15 @@ public class HelloWorld extends Frame{
 	}
 	public void launchFrame() {
     	setTitle("论文检索工具");
-        setLocation(200, 200);
-        //setSize(1000, 800);
-        
+        setLocation(20, 20);
+        //setSize(1200,600);
+
         add(inputquery, BorderLayout.CENTER);
         add(button, BorderLayout.EAST);
-        add(showresult, BorderLayout.NORTH);
+        add(showresult, BorderLayout.SOUTH);
+        
         pack();
+        
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -123,6 +124,7 @@ public class HelloWorld extends Frame{
 			//File2DocumentUtils.printDocumentNameAndPath(doc); // 打印出文档信息
 			content.append("name = " + doc.get("name")).append("\n");
 			content.append("path = " + doc.get("path")).append("\n");
+			content.append("\n");
 		}
 		return content.toString();
 	}
