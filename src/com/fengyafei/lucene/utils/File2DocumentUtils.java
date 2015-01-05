@@ -14,6 +14,7 @@ import org.apache.lucene.document.Field.Index;
 import org.apache.lucene.document.Field.Store;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.util.PDFTextStripper;
+import org.apache.pdfbox.pdmodel.PDDocument;
 import org.junit.Test;
 
 public class File2DocumentUtils {
@@ -52,9 +53,11 @@ public class File2DocumentUtils {
 		PDFParser p = new PDFParser(fis);
 		p.parse();
 		PDFTextStripper ts = new PDFTextStripper();
-		String s = ts.getText(p.getPDDocument());
-
+		PDDocument pddoc = p.getPDDocument();
+		String s = ts.getText(pddoc);
+		pddoc.close();
 		fis.close();
+		
 		//System.out.println(s);
 		return s;
 	}

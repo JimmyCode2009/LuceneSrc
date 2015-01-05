@@ -7,6 +7,6 @@
 	<classpathentry kind="lib" path="lib/lucene-core-2.4.0.jar" sourcepath="F:/open-projects/Lucene&amp;Compass/Lucene2.4.0/Lucene2.4_all/lucene-2.4.0-src.zip"/>
 	<classpathentry kind="lib" path="lib/lucene-highlighter-2.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/je-analysis-1.5.3.jar"/>
-	<classpathentry kind="lib" path="F:/BaiduYunDownload/[www.java1234.com][传智播客]全文检索/[HeyJava][传智播客]LuceneDemoSrc/lib/pdfbox-app-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/admin/Documents/GitHub/LuceneSrc/lib/pdfbox-app-1.8.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

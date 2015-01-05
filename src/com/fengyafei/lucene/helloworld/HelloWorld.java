@@ -82,7 +82,7 @@ public class HelloWorld extends Frame{
 	 */
 	@Test
 	public void createIndex() throws Exception {
-		String path = "F:\\1_学习\\1_web spam\\1 Survey";
+		String path = "D:\\研究\\web spam论文";
 		LinkedList<String> AllFilePath = File2DocumentUtils
 				.traverseFolder(path);
 
